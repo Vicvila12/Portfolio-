@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Victor | Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #fafafa;
+            --text-color: #1a1a1a;
+            --muted-text: #666666;
+            --accent-color: #0070f3;
+            --border-color: #eaeaea;
+            --max-width: 750px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 3rem 1.5rem;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 4rem;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+        }
+
+        p.subtitle {
+            color: var(--muted-text);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        nav a:hover {
+            border-color: var(--text-color);
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted-text);
+            margin-bottom: 1.75rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+        }
+
+        .work-item {
+            margin-bottom: 0.5rem;
+        }
+
+        .work-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.25rem;
+        }
+
+        .work-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .work-link {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .work-link:hover {
+            text-decoration: underline;
+        }
+
+        .work-meta {
+            font-size: 0.85rem;
+            color: var(--muted-text);
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            font-weight: 500;
+        }
+
+        .work-description {
+            font-size: 0.95rem;
+            color: #2b2b2b;
+        }
+
+        .contact-links a {
+            display: inline-block;
+            color: var(--text-color);
+            text-decoration: none;
+            margin-right: 2rem;
+            font-weight: 500;
+            font-size: 1rem;
+            border-bottom: 1px solid transparent;
+        }
+
+        .contact-links a:hover {
+            border-color: var(--text-color);
+        }
+
+        footer {
+            margin-top: 6rem;
+            font-size: 0.85rem;
+            color: var(--muted-text);
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.5rem;
+        }
+
+        @media (max-width: 580px) {
+            .work-header {
+                flex-direction: column;
+                gap: 0.25rem;
+            }
+            body {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Emmanuel Victor</h1>
+            <p class="subtitle">Writer & Editorial Specialist — Culture, Lifestyle & Sports</p>
+            <nav>
+                <a href="#editorial">Editorial & SEO</a>
+                <a href="#multimedia">Multimedia & Scripts</a>
+                <a href="#brand">Branded Content</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Section 1: Editorial & SEO Strategy -->
+        <section id="editorial">
+            <h2>Editorial & SEO Strategy</h2>
+            <div class="grid">
+                
+                <!-- Keere Ó -->
+                <div class="work-item">
+                    <div class="work-header">
+                        <span class="work-title">Keere Ó</span>
+                        <a href="https://keereojournal.com" target="_blank" class="work-link">keereojournal.com &rarr;</a>
+                    </div>
+                    <div class="work-meta">Culture Features & On-Page SEO</div>
+                    <p class="work-description">
+                        Researching and profiling cultural figures and local creatives. Conducting comprehensive background research and structured profile interviews. Developing content optimized with targeted SEO keywords, layout management, and metadata integration within the publication's CMS pipeline to boost search discoverability.
+                    </p>
+                </div>
+
+                <!-- INFAMOUS Magazine -->
+                <div class="work-item">
+                    <div class="work-header">
+                        <span class="work-title">INFAMOUS Magazine</span>
+                        <a href="https://www.instagram.com/theinfamousmag" target="_blank" class="work-link">@theinfamousmag &rarr;</a>
+                    </div>
+                    <div class="work-meta">Editorial Copy & Creative Features</div>
+                    <p class="work-description">
+                        Pitched and produced analytical culture pieces, reviews, and detailed feature layouts spotlighting underground scene personalities. Fact-checked and proofread text strings to uphold strict editorial guidelines and preserve distinct subject perspectives.
+                    </p>
+                </div>
+
+                <!-- The Gunner Out Of Ammo -->
+                <div class="work-item">
+                    <div class="work-header">
+                        <span class="work-title">The Gunner Out Of Ammo</span>
+                        <a href="https://docs.google.com/document/d/1GiTMRR0me1RBI2CqOcx8jQ61ak6g3dO6/edit" target="_blank" class="work-link">Read Article &rarr;</a>
+                    </div>
+                    <div class="work-meta">Sports Journalism — Performance Analysis Essay</div>
+                    <p class="work-description">
+                        A tactical sports commentary piece evaluating collective team dependency on an individual athlete's output. Blends descriptive storytelling with concrete performance metrics and observational context.
+                    </p>
+                </div>
+
+                <!-- Beans -->
+                <div class="work-item">
+                    <div class="work-header">
+                        <span class="work-title">Beans</span>
+                        <a href="https://www.canva.com/design/DAFrgN0jZ8w/Su-oSwEe9P7ugN6jGoWeiw/edit" target="_blank" class="work-link">Read Sample &rarr;</a>
+                    </div>
+                    <div class="work-meta">Lifestyle Blogging — Conversational Copy</div>
+                    <p class="work-description">
+                        An experimental conversational essay designed to reframe familiar everyday concepts into readable, highly engaging consumer prose.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 2: Multimedia & Scripting -->
+        <section id="multimedia">
+            <h2>Multimedia & Audio-Visual Scripting</h2>
+            <div class="grid">
+
+                <!-- Football Hub Podcast -->
+                <div class="work-item">
+                    <div class="work-header">
+                        <span class="work-title">Football Hub Podcast</span>
+                        <a href="https://youtube.com/@footballhubpod" target="_blank" class="work-link">View Channel &rarr;</a>
+                    </div>
+                    <div class="work-meta">Show Structuring & Content Scripting</div>
+                    <p class="work-description">
+                        Structured show rundowns, sequenced conversational topics, and scripted media elements for a football-focused broadcast channel. Successfully translated complex tactical sports strategies into accessible video narratives.
+                    </p>
+                </div>
+
+                <!-- Nesiawesomeness (NesiMP4) -->
+                <div class="work-item">
+                    <div class="work-header">
+                        <span class="work-title">Nesiawesomeness (NesiMP4)</span>
+                        <a href="https://youtube.com/@nesimp4" target="_blank" class="work-link">View Channel &rarr;</a>
+                    </div>
+                    <div class="work-meta">YouTube Scriptwriting & Pipeline Management</div>
+                    <p class="work-description">
+                        Wrote, structured, and managed spoken-word video scripts for software devlogs, design updates, and technical walkthroughs. Optimized copy using high-impact pacing and viewer retention hooks to maximize audience metrics.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 3: Branded Copy & Platform Management -->
+        <section id="brand">
+            <h2>Branded Content & Distribution</h2>
+            <div class="grid">
+
+                <!-- Athquake -->
+                <div class="work-item">
+                    <div class="work-header">
+                        <span class="work-title">Athquake</span>
+                    </div>
+                    <div class="work-meta">Brand Copywriting & Content Strategy</div>
+                    <p class="work-description">
+                        Developed targeted campaign text strings and promotional short-form copywriting for an audience-aware sports brand. Managed overall messaging tone to capture and reflect the organic culture of the game.
+                    </p>
+                </div>
+
+                <!-- Social Media Architecture -->
+                <div class="work-item">
+                    <div class="work-header">
+                        <span class="work-title">Stardawg & LSG</span>
+                    </div>
+                    <div class="work-meta">Platform Distribution & Growth Consulting</div>
+                    <p class="work-description">
+                        Supervised end-to-end platform text asset management and rollout copy adaptation across organic channels. Deployed audience growth frameworks and advisory consulting to optimize visibility metrics.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact & Inquiries</h2>
+            <div class="contact-links">
+                <a href="mailto:emmanuelvictor432@gmail.com">Email</a>
+                <a href="https://www.instagram.com/vic_ike.dkln" target="_blank">Instagram</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Emmanuel Victor. Optimized for Editorial, Content Writing, and SEO execution.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
